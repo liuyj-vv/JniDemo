@@ -21,6 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
         </activity>
-*```*
+```
 ## 生成 .h 文件
 ![Alt text](./readme/jni.png)
