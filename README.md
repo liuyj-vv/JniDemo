@@ -1,4 +1,7 @@
-## test
+## jni demo
+0. Android Studio 版本
+
+![Alt text](./readme/AdnroidStudio.png)
 
 1. jni 环境
 >File-->Project Structure-->SDK Location
