@@ -8,8 +8,11 @@
 
 ![Alt text](./readme/env.png)
 
+2. 配置 gradle.properties
+> android.useDeprecatedNdk=true
+
 ## 代码运行
-2. 使新建的 activity 能够正常编译运行
+0. 使新建的 activity 能够正常编译运行
 > AndroidManifest.xml 添加
 ```
         <activity android:name=".MainActivity">
