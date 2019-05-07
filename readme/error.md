@@ -42,9 +42,9 @@ gradle.properties中的android.deprecatedNdkCompileLease = 1557220411536
 
 ## 尝试二
 1. 同尝试一
- ![Alt text](./readme/error1.png)
+ ![Alt text](./error1.png)
 2. 添加
-![Alt text](./readme/error2.png)
+![Alt text](./error2.png)
 ```
     sourceSets {
         main {
@@ -53,4 +53,4 @@ gradle.properties中的android.deprecatedNdkCompileLease = 1557220411536
     }
 ``` 
 报错：
-![Alt text](./readme/error3.png)
+![Alt text](./error3.png)
