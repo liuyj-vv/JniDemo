@@ -41,9 +41,7 @@ gradle.properties中的android.deprecatedNdkCompileLease = 1557220411536
 ```
 
 ## 尝试二
-1. 同尝试一
- ![Alt text](./error1.png)
-2. 添加
+1. 添加
 ![Alt text](./error2.png)
 ```
     sourceSets {
@@ -52,5 +50,7 @@ gradle.properties中的android.deprecatedNdkCompileLease = 1557220411536
         }
     }
 ``` 
+>不在本项目中生成c程序的so
+
 报错：
 ![Alt text](./error3.png)
