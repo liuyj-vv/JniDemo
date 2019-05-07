@@ -8,7 +8,8 @@
 
 ![Alt text](./readme/env.png)
 
-2. 新建的 activity 能够正常编译运行
+## 代码运行
+2. 使新建的 activity 能够正常编译运行
 > AndroidManifest.xml 添加
 ```
         <activity android:name=".MainActivity">
