@@ -1,4 +1,4 @@
-## jni demo
+## jni 环境
 0. Android Studio 版本
 
 ![Alt text](./readme/AdnroidStudio.png)
@@ -18,4 +18,6 @@
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
         </activity>
-```
+*```*
+## 生成 .h 文件
+![Alt text](./readme/jni.png)
