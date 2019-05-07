@@ -13,3 +13,7 @@ Alternatively, you can use the experimental plugin:
  https://developer.android.com/r/tools/experimental-plugin.html
  ```
  
+## 尝试一
+> gradle.properties 添加
+>>android.useDeprecatedNdk=true
+ 
