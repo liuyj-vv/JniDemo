@@ -39,4 +39,18 @@ android.deprecatedNdkCompileLease=1557220411536 in gradle.properties
 要继续使用已弃用的NDK编译另外60天，请设置
 gradle.properties中的android.deprecatedNdkCompileLease = 1557220411536
 ```
- 
+
+## 尝试二
+1. 同尝试一
+ ![Alt text](./readme/error1.png)
+2. 添加
+![Alt text](./readme/error2.png)
+```
+    sourceSets {
+        main {
+            jni.srcDirs = []
+        }
+    }
+``` 
+报错：
+![Alt text](./readme/error3.png)
