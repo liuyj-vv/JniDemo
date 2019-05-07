@@ -22,5 +22,9 @@
             </intent-filter>
         </activity>
 ```
-## 生成 .h 文件
+
+## 生成使用 .h 文件
+
 ![Alt text](./readme/jni.png)
+
+![Alt text](./readme/jni2.png)
