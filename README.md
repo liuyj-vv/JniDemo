@@ -1,11 +1,9 @@
 ## test
 
-1. NDK 安装
+1. jni 环境
 >File-->Project Structure-->SDK Location
 
-![Alt text](./readme/ndk1.png)
-
-![Alt text](./readme/ndk2.png)
+![Alt text](./readme/env.png)
 
 2. 新建的 activity 能够正常编译运行
 > AndroidManifest.xml 添加
