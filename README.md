@@ -1,3 +1,3 @@
 ## test
 
-![Alt text](../ic_launcher.png)
+![Alt text](./ic_launcher.png)
