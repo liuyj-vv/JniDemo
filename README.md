@@ -27,4 +27,7 @@
 
 ![Alt text](./readme/jni.png)
 
+## 添加c文件
 ![Alt text](./readme/jni2.png)
+
+[遇到问题](./readme/error.md)
