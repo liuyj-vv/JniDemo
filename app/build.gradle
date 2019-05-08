@@ -15,13 +15,14 @@ android {
             abiFilters "armeabi-v7a", "x86"//cpu的类型
         }
     }
-    externalNativeBuild {
-        cmake {
-            version "3.12.0"
-        }
 
+    externalNativeBuild {
         ndkBuild {
             path 'build/intermediates/ndk/debug/Android.mk'
+        }
+
+        cmake {
+            version "3.12.0"
         }
     }
 
