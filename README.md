@@ -65,6 +65,20 @@ android {
 }
 ```
 
+## 在 C 中打印信息到 logcat
+1. 添加库
+```
+        ndk {
+            moduleName "JNISample"            
+```
+                ldLibs  "m", "log"
+```            
+            abiFilters "armeabi-v7a", "x86"//cpu的类型
+        }
+```
+2. 重新编译库--必须重新生成 Adroid.mk 文件
+
+
 ## 遇到的问题
 
 [0. 新建的工程不能运行的问题](./doc/errorNewActivity.md)
