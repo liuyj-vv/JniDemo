@@ -29,4 +29,38 @@
 4. 拷贝 *.h 文件到 jni 目录下
 5. 创建 *.c 文件实现对应的函数
 
+## 编译问题
+0. 修改模块下的 build.gradle，添加 ****ndk*** 和 ***externalNativeBuild***
+```
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.jnidemo"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+        ndk {
+            moduleName "JNISample"
+            abiFilters "armeabi-v7a", "x86"//cpu的类型
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            version "3.12.0"
+        }
+        ndkBuild {
+            path 'build/intermediates/ndk/debug/Android.mk'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+```
