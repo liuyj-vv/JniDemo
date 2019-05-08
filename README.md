@@ -1,6 +1,7 @@
 ## jni 环境
 0. Android Studio 版本
-> Android Studio 3.2
+> Help-->About
+>> Android Studio 3.2
 
 1. 环境支持
 >Tools-->SDK Manager-->SDK Tools
