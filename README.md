@@ -1,4 +1,4 @@
-## jni 环境
+## 环境
 0. Android Studio 版本
 > Help-->About
 >> Android Studio 3.2
@@ -6,6 +6,11 @@
 1. 环境支持
 >Tools-->SDK Manager-->SDK Tools
 >>安装 CMake、LLDB、NDK 
+
+>>>NDK 是什么，英文全称 Native Develop Kit。Android NDK 就是一套工具集合，允许你使用C/C++语言来实现应用程序的部分功能。
+
+>>>JNI，全称为Java Native Interface，即Java本地接口，JNI是Java调用Native 语言的一种特性。
+![Alt text](./doc/jni说明.png)
 
 ## 生成使用 .h 文件，并实现对应的函数
 0. 进入JniDemo.java(jni的java文件)目录
