@@ -54,3 +54,16 @@ gradle.properties中的android.deprecatedNdkCompileLease = 1557220411536
 
 报错：
 ![Alt text](./error3.png)
+
+## 尝试三（解决问题）
+```
+    externalNativeBuild {
+        cmake {
+            version "3.12.0"
+        }
+        ndkBuild {
+            path 'build/intermediates/ndk/debug/Android.mk'
+        }
+    }
+```
+![Alt text](./error_ok.png)
