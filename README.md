@@ -76,7 +76,7 @@ android {
             abiFilters "armeabi-v7a", "x86"//cpu的类型
         }
 ```
-2. 重新编译库--必须重新生成 Adroid.mk 文件
+2. `重新编译库--必须重新生成 Adroid.mk 文件`
 
 
 ## 遇到的问题
