@@ -20,6 +20,8 @@ JniDemo.java    //要处理的java文件
 4. 拷贝 *.h 文件到 jni 目录下
 5. 创建 *.c 文件实现对应的函数
 
+[javac执行示例](./doc/javac_commad.png)
+
 ## 编译问题
 0. 修改模块下的 build.gradle，添加 ***ndk*** 和 ***externalNativeBuild***
 ```

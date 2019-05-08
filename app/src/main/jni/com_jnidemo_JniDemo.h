@@ -23,6 +23,14 @@ JNIEXPORT jstring JNICALL Java_com_jnidemo_JniDemo_getString
 JNIEXPORT jboolean JNICALL Java_com_jnidemo_JniDemo_setString
   (JNIEnv *, jclass, jstring);
 
+/*
+ * Class:     com_jnidemo_JniDemo
+ * Method:    setString1
+ * Signature: (Ljava/lang/String;)Z
+ */
+JNIEXPORT jboolean JNICALL Java_com_jnidemo_JniDemo_setString1
+  (JNIEnv *, jclass, jstring);
+
 #ifdef __cplusplus
 }
 #endif
