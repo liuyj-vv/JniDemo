@@ -5,17 +5,7 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 
-//返回一个字符串
-JNIEXPORT jstring JNICALL Java_com_jnidemo_JniDemo_getString(JNIEnv *env, jclass jobj) {
-    return (*env)->NewStringUTF(env,"HelloWorld 我是用jni调用出来的字符串");
-}
-JNIEXPORT jboolean JNICALL Java_com_jnidemo_JniDemo_setString(JNIEnv *env, jclass jobj, jstring jstring1){
-    sys(jstringToChar(env, jstring1));
-    return 1;
-}
-JNIEXPORT jboolean JNICALL Java_com_jnidemo_JniDemo_setString1(JNIEnv *env, jclass jobj, jstring jstring1) {
-    return 1;
-}
+
 
 int sys(const char * cmdstring)
 {
@@ -55,4 +45,18 @@ char* jstringToChar(JNIEnv* env, jstring jstr) {
     }
     (*env)->ReleaseByteArrayElements(env, barr, ba, 0);
     return rtn;
+}
+
+//返回一个字符串
+JNIEXPORT jstring JNICALL Java_com_jnidemo_JniDemo_getString(JNIEnv *env, jclass jobj) {
+    return (*env)->NewStringUTF(env,"HelloWorld 我是用jni调用出来的字符串");
+}
+JNIEXPORT jboolean JNICALL Java_com_jnidemo_JniDemo_setString(JNIEnv *env, jclass jobj, jstring jstring1){
+    jstringToChar(env, jstring1);
+
+//    printf("%s", );
+    return 1;
+}
+JNIEXPORT jboolean JNICALL Java_com_jnidemo_JniDemo_setString1(JNIEnv *env, jclass jobj, jstring jstring1) {
+    return 1;
 }

@@ -12,17 +12,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.btn1).setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        findViewById(R.id.btn1).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onFocusChange(View v, boolean hasFocus) {
+            public void onClick(View v) {
                 Toast.makeText(getBaseContext(), JniDemo.getString(), Toast.LENGTH_SHORT).show();
             }
         });
-
-        findViewById(R.id.btn2).setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        findViewById(R.id.btn2).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                JniDemo.setString("ls");
+            public void onClick(View v) {
+                JniDemo.setString("=========================================");
             }
         });
     }
