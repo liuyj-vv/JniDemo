@@ -9,11 +9,19 @@ extern "C" {
 #endif
 /*
  * Class:     com_jnidemo_JniDemo
- * Method:    test
+ * Method:    getString
  * Signature: ()Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL Java_com_jnidemo_JniDemo_getString
-  (JNIEnv *, jobject);
+  (JNIEnv *, jclass);
+
+/*
+ * Class:     com_jnidemo_JniDemo
+ * Method:    setString
+ * Signature: (Ljava/lang/String;)Z
+ */
+JNIEXPORT jboolean JNICALL Java_com_jnidemo_JniDemo_setString
+  (JNIEnv *, jclass, jstring);
 
 #ifdef __cplusplus
 }

@@ -4,3 +4,6 @@
 JNIEXPORT jstring JNICALL Java_com_jnidemo_JniDemo_getString(JNIEnv *env, jclass jobj) {
     return (*env)->NewStringUTF(env,"HelloWorld 我是用jni调用出来的字符串");
 }
+JNIEXPORT jboolean JNICALL Java_com_jnidemo_JniDemo_setString(JNIEnv *env, jclass jobj, jstring jstring1){
+    return 1;
+}

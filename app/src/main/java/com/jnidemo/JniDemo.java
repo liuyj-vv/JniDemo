@@ -5,4 +5,6 @@ public class JniDemo {
         System.loadLibrary("JNISample");
     }
     public static native String getString();
+    public static native boolean setString(String string);
+
 }
