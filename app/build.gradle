@@ -19,6 +19,7 @@ android {
         cmake {
             version "3.12.0"
         }
+
         ndkBuild {
             path 'build/intermediates/ndk/debug/Android.mk'
         }

@@ -7,4 +7,10 @@
 
 >> 使用git恢复到以往能够成功的状态也出现这个错误
 
+>**解决办法**
+1. 生成Android.mk文件
+2. 完成编译正常运行(不能clean)
+![生成Android.mk文件](./errorNoAndroid.mk1.png)
+
+![完成编译正常运行](./errorNoAndroid.mk2.png)
 
