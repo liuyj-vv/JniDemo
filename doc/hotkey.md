@@ -1,5 +1,5 @@
 ## 配置
-File-->Settings-->Tools-->External Tools-->
+>File-->Settings-->Tools-->External Tools-->
 
 | 名称  |  参数  |
 |---|---|
