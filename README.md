@@ -1,18 +1,16 @@
 ## jni 环境
 0. Android Studio 版本
+> Android Studio 3.2
+! [Alt text](./readme/AdnroidStudio.png)
 
-![Alt text](./readme/AdnroidStudio.png)
-
-1. jni 环境
->File-->Project Structure-->SDK Location
-
-![Alt text](./readme/env.png)
-
-2. 配置 gradle.properties
-> android.useDeprecatedNdk=true
+1. 环境支持
+>Tools-->SDK Manager-->SDK Tools
+>>安装 CMake、LLDB、NDK 
 
 ## 代码运行
-0. 使新建的 activity 能够正常编译运行
+0. 新建一个空的工程
+1. 创建一个Basic Activity
+2. 使新建的 Activity 能够正常编译运行
 > AndroidManifest.xml 添加
 ```
         <activity android:name=".MainActivity">
@@ -23,11 +21,12 @@
         </activity>
 ```
 
-## 生成使用 .h 文件
+## 生成使用 .h 文件，并实现对应的函数
+0. 进入JniDemo.java(jni的java文件)目录
+1. 执行命令 ***javac -h -jni JniDemo.java***
+2. 将在当前目录下生成 ***./-jni/\*.h*** 和 *.class 文件
+3. 在main目录下创建jni目录： 右键(main)-->new-->Folder-->JNI Folder-->Finish 创建ini目录
+4. 拷贝 *.h 文件到 jni 目录下
+5. 创建 *.c 文件实现对应的函数
 
-![Alt text](./readme/jni.png)
 
-## 添加c文件
-![Alt text](./readme/jni2.png)
-
-[遇到问题](./readme/error.md)

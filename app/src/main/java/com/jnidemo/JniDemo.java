@@ -4,5 +4,5 @@ public class JniDemo {
     static {
         System.loadLibrary("JNISample");
     }
-    public static native String test();
+    public static native String getString();
 }
