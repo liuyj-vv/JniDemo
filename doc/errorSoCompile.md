@@ -16,6 +16,7 @@ Alternatively, you can use the experimental plugin:
 ## 尝试一
 > gradle.properties 添加
 >>android.useDeprecatedNdk=true
+![Alt text](./errorSoCompile_try1.png)
 ```
 Error: Flag android.useDeprecatedNdk is no longer supported and will be removed in the next version of Android Studio.  Please switch to a supported build system.
 Consider using CMake or ndk-build integration. For more information, go to:
@@ -42,7 +43,7 @@ gradle.properties中的android.deprecatedNdkCompileLease = 1557220411536
 
 ## 尝试二
 1. 添加
-![Alt text](./error2.png)
+![Alt text](./errorSoCompile_try2.png)
 ```
     sourceSets {
         main {
@@ -53,7 +54,7 @@ gradle.properties中的android.deprecatedNdkCompileLease = 1557220411536
 >不在本项目中生成c程序的so
 
 报错：
-![Alt text](./error3.png)
+![Alt text](./errorSoCompile_try3.png)
 
 ## 尝试三（解决问题）
 >参考：https://stackoverflow.com/questions/41791429/error-your-project-contains-c-files-but-it-is-not-using-a-supported-native-bu/42364491
@@ -67,4 +68,4 @@ gradle.properties中的android.deprecatedNdkCompileLease = 1557220411536
         }
     }
 ```
-![Alt text](./error_ok.png)
+![Alt text](./errorSoCompile_try_ok.png)

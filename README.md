@@ -1,7 +1,6 @@
 ## jni 环境
 0. Android Studio 版本
 > Android Studio 3.2
-! [Alt text](./readme/AdnroidStudio.png)
 
 1. 环境支持
 >Tools-->SDK Manager-->SDK Tools
@@ -30,7 +29,7 @@
 5. 创建 *.c 文件实现对应的函数
 
 ## 编译问题
-0. 修改模块下的 build.gradle，添加 ****ndk*** 和 ***externalNativeBuild***
+0. 修改模块下的 build.gradle，添加 ***ndk*** 和 ***externalNativeBuild***
 ```
 android {
     compileSdkVersion 28
@@ -64,3 +63,7 @@ android {
     }
 }
 ```
+
+## 遇到的问题
+[0. 新建的工程不能运行的问题](./doc/errorNewActivity.md)
+[1. so的编译问题](./doc/errorSoCompile.md)
