@@ -13,7 +13,7 @@
 ![Alt text](./doc/jni说明.png)
 
 ## 生成使用 .h 文件，并实现对应的函数
-[添加javac -h 快捷键](./hotkey.md)
+[添加javac -h 快捷键](./doc/hotkey.md)
 
 0. 进入JniDemo.java(jni的java文件)目录
 1. 执行命令 ***javac -h ../jni JniDemo.java***
