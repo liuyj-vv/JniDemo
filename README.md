@@ -15,7 +15,7 @@ javac -h        //命令
 jni             //生成的 .h 文件保存的目录(可随意指定)
 JniDemo.java    //要处理的java文件
 ```
-2. 将在当前目录下生成 ***./jni/\*.h*** 和 *.class 文件
+2. 将在指定目录下生成 ***./jni/\*.h*** 和在当前目录下生成 *.class（不需要删掉） 文件
 3. 在main目录下创建jni目录： 右键(main)-->new-->Folder-->JNI Folder-->Finish 创建ini目录
 4. 拷贝 *.h 文件到 jni 目录下
 5. 创建 *.c 文件实现对应的函数
