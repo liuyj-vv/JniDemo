@@ -69,5 +69,5 @@ android {
 
 [1. so的编译问题](./doc/errorSoCompile.md)
 
-[2. so的编译问题](./doc/errorNoAndroid.mk.md)
+[2. 找不到Android.mk](./doc/errorNoAndroid.mk.md)
 
