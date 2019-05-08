@@ -9,7 +9,12 @@
 
 ## 生成使用 .h 文件，并实现对应的函数
 0. 进入JniDemo.java(jni的java文件)目录
-1. 执行命令 ***javac -h -jni JniDemo.java***
+1. 执行命令 ***javac -h jni JniDemo.java***
+``` 
+javac -h        //命令
+jni             //生成的 .h 文件保存的目录
+JniDemo.java    //要处理的java文件
+```
 2. 将在当前目录下生成 ***./-jni/\*.h*** 和 *.class 文件
 3. 在main目录下创建jni目录： 右键(main)-->new-->Folder-->JNI Folder-->Finish 创建ini目录
 4. 拷贝 *.h 文件到 jni 目录下
