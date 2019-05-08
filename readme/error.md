@@ -56,6 +56,7 @@ gradle.properties中的android.deprecatedNdkCompileLease = 1557220411536
 ![Alt text](./error3.png)
 
 ## 尝试三（解决问题）
+>参考：https://stackoverflow.com/questions/41791429/error-your-project-contains-c-files-but-it-is-not-using-a-supported-native-bu/42364491
 ```
     externalNativeBuild {
         cmake {
