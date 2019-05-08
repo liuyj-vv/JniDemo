@@ -5,7 +5,14 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 
+#include <android/log.h>
 
+#ifndef LOG_TAG
+#define LOG_TAG "CCCC"
+#endif
+
+#define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
+#define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 
 int sys(const char * cmdstring)
 {
@@ -52,9 +59,10 @@ JNIEXPORT jstring JNICALL Java_com_jnidemo_JniDemo_getString(JNIEnv *env, jclass
     return (*env)->NewStringUTF(env,"HelloWorld 我是用jni调用出来的字符串");
 }
 JNIEXPORT jboolean JNICALL Java_com_jnidemo_JniDemo_setString(JNIEnv *env, jclass jobj, jstring jstring1){
-    jstringToChar(env, jstring1);
+//    jstringToChar(env, jstring1);
 
-//    printf("%s", );
+
+    LOGD("我要看到的调试信息^_^");
     return 1;
 }
 JNIEXPORT jboolean JNICALL Java_com_jnidemo_JniDemo_setString1(JNIEnv *env, jclass jobj, jstring jstring1) {

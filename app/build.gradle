@@ -12,6 +12,7 @@ android {
 
         ndk {
             moduleName "JNISample"
+            ldLibs  "m", "log"
             abiFilters "armeabi-v7a", "x86"//cpu的类型
         }
     }
