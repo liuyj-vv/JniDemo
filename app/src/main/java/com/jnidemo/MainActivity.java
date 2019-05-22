@@ -13,7 +13,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-    String TAG = MainActivity.class.getSimpleName();
+//    String TAG = MainActivity.class.getSimpleName();
+    String TAG = "CCCCccc";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                JniDemo.setString1("logcat -c 2>&1");
+            String cmd = "id 2>&1";
+                JniDemo.setString1(cmd);
                 try {
-                    final Process process = Runtime.getRuntime().exec("ls");
+                    final Process process = Runtime.getRuntime().exec(cmd);
 
 
                     final Boolean[] flag = {true};
