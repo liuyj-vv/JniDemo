@@ -1,5 +1,7 @@
 package com.jnidemo;
 
+import android.os.Handler;
+import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -36,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn0).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            String cmd = "id 2>&1";
+                final Handler mHandler = new Handler();
+
+                String cmd = "id 2>&1";
                 JniDemo.setString1(cmd);
                 try {
                     final Process process = Runtime.getRuntime().exec(cmd);
@@ -54,7 +58,13 @@ public class MainActivity extends AppCompatActivity {
                                 while (flag[0] ) {
                                     if ((line1 = bufferedReader_stdin.readLine()) != null) {
                                         Log.e(TAG, "LINE["+Thread.currentThread().getStackTrace()[2].getLineNumber()+"]" + " stdout:"+line1);
-//                                        Toast.makeText(getBaseContext(), line1, Toast.LENGTH_SHORT).show();
+                                        final String str = line1;
+                                        mHandler.post(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
+                                            }
+                                        });
                                     }
                                     if ((line2 = bufferedReader_stderr.readLine()) != null) {
                                         Log.e(TAG, "LINE["+Thread.currentThread().getStackTrace()[2].getLineNumber()+"]" + " error :"+line2);
