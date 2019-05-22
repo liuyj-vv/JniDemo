@@ -33,15 +33,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.btn3).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn0).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
             String cmd = "id 2>&1";
                 JniDemo.setString1(cmd);
                 try {
                     final Process process = Runtime.getRuntime().exec(cmd);
-
-
                     final Boolean[] flag = {true};
                     final Thread thread_stdout = new Thread(new Runnable() {
                         @Override
@@ -56,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                                 while (flag[0] ) {
                                     if ((line1 = bufferedReader_stdin.readLine()) != null) {
                                         Log.e(TAG, "LINE["+Thread.currentThread().getStackTrace()[2].getLineNumber()+"]" + " stdout:"+line1);
+//                                        Toast.makeText(getBaseContext(), line1, Toast.LENGTH_SHORT).show();
                                     }
                                     if ((line2 = bufferedReader_stderr.readLine()) != null) {
                                         Log.e(TAG, "LINE["+Thread.currentThread().getStackTrace()[2].getLineNumber()+"]" + " error :"+line2);

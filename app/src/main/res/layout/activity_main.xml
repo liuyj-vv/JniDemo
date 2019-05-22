@@ -11,20 +11,22 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <Button
+            android:id="@+id/btn0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="两种方式执行 id 命令的方法"/>
+
+        <Button
             android:id="@+id/btn1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="按键1"/>
+            android:text="获取c中字符串的方法"/>
         <Button
             android:id="@+id/btn2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="按键2"/>
-        <Button
-            android:id="@+id/btn3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="按键3"/>
+            android:text="传入字符串到c中的方法"/>
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
