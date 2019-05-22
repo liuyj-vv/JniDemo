@@ -78,6 +78,13 @@ android {
 ```
 2. `重新编译库--必须重新生成 Adroid.mk 文件`
 
+## 在c中执行命令
+```
+//函数
+void executeCMD(const char *cmd, char *result);
+```
+>在java、c中执行 **id** 命令，结果相同 --->> 权限不变
+
 
 ## 遇到的问题
 
